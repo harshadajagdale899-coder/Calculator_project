@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <div id="main">
+         <div class="display_box">
+             <input type="text" id="display"  readonly >
+         </div>
+         <div class="compute_box"  >
+             <button  onclick="operator('+')" class="numeric">+</button>
+             <button class="numeric" onclick="operator('-')">-</button>
+             <button class="numeric" onclick="operator('X')">X</button>
+             <button class="numeric" onclick="operator('/')">/</button>
+             <button class="numeric" onclick="operator('%')">%</button>
+             <button class="numeric" id="equal" onclick="equal_to()">=</button>
+             <button class="numeric" onclick="number(1)">1</button>
+             <button class="numeric" onclick="number(2)">2</button>
+             <button class="numeric" onclick="number(3)">3</button>
+             <button class="numeric" onclick="number(4)">4</button>
+             <button class="numeric" onclick="number(5)">5</button>
+             <button class="numeric" onclick="number(6)">6</button>
+             <button class="numeric" onclick="number(7)">7</button>
+             <button onclick="number(8)" class="numeric">8</button>
+             <button class="numeric" onclick="number(9)">9</button>
+             <button class="numeric" onclick="number(0)">0</button>
+             <button class="numeric" id="decimal" onclick="dot()">.</button>
+             <button onclick="clearDisplay()" id="cancel" class="numeric">AC</button>
+         </div>
+
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
